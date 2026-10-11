@@ -77,7 +77,7 @@ export const Register = () => {
       let msg = err.response?.data?.message;
       if (!msg) {
         if (err.message === 'Network Error' || !err.response) {
-          msg = 'Cannot connect to backend server. Please make sure Spring Boot is running on http://localhost:8080.';
+          msg = 'Cannot connect to backend server. Please make sure the backend service is running and accessible.';
         } else {
           msg = err.message || 'Registration failed. Please check your details.';
         }

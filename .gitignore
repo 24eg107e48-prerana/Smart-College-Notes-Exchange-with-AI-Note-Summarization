@@ -22,21 +22,23 @@ dist/
 build/
 .output/
 .vite/
+.netlify/
 
-# 3. Environment Variables & Secret Files
+# 3. Environment Variables & Secret Files (Keep .env.example tracked)
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
 *.env
-!.env.example
+**/.env
+**/.env.*
+!**/.env.example
 
 # 4. User Uploaded Storage Directories (Uploaded PDF Files)
-backend/uploads/*
+backend/uploads/**
+!backend/uploads/
 !backend/uploads/.gitkeep
-uploads/
-uploads/notes/
+!backend/uploads/notes/
+!backend/uploads/notes/.gitkeep
+uploads/**
 
 # 5. IDE & Editor Configurations
 .idea/

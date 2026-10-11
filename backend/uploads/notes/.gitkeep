@@ -1,0 +1,3 @@
+# Ignore files uploaded by users while keeping the notes directory tracked
+*
+!.gitkeep
